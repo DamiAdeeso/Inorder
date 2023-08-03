@@ -26,15 +26,17 @@ code {
 }
 #home-page{
   margin: 0;
+  position: relative;
   padding-top:10%;
   background-image: url(../public/background.jpg);
   background-size: cover;
-  height:80vh;
+  height: 86vh;
   /* opacity: 0.4; */
   background-repeat:   no-repeat;
   background-position: center center;
   text-align: left;
 }
+
 #header-text{
   font-weight:800;
   font-size: 38px;
@@ -63,4 +65,16 @@ svg{
 }
 #home-page span{
   color: #c214fe;
+}
+#featured-on{
+  margin-top: 20%;
+  color:#3c4043ff
+}
+#animation1{
+  background-color: #ffffff;
+  width:15rem;
+  padding:10px 0;
+  height:230px;
+  text-align: center;
+  border-radius: 20px;
 }
