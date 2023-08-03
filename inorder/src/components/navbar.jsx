@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import {Navbar,Image} from 'react-bootstrap/';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 function navbar() {
   return (
     <>
@@ -19,9 +21,6 @@ function navbar() {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
-                </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -29,7 +28,7 @@ function navbar() {
                   <Nav.Link href="#action2" className ="nav-link">Blog</Nav.Link>
                   <Nav.Link href="#action2" className ="nav-link">How it Works</Nav.Link>
                 </Nav>
-                  <Button id = "try-it" >Try it Free</Button>
+                  <Button id = "try-it" >Try it Free <FontAwesomeIcon icon={faPlay} /></Button>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

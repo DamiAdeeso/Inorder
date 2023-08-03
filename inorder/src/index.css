@@ -49,13 +49,17 @@ a{
   font-size: 18px;
   font-weight:600;
 }
+svg{
+  fill: #c214fe;
+  margin:0 6px;
+}
 #get-started{
   margin-top:2rem;
   background-color: #c214fe;
   color: #ffffff;
   padding: 3px 6px;
   display: block;
-  width:200px;
+  width:220px;
 }
 #home-page span{
   color: #c214fe;
