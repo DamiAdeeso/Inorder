@@ -22,24 +22,17 @@ const HomePage = () => {
               </h5>
             </div>
           </Col>
-          <Col  md={7} className="pl-5 d-">
-            <Container>
-              <Row>
-                <Col md={6}>
-                  <div id='animation1' className=" d-flex align-items-center justify-content-center ">
-                    <img id ="tr" src="animation3.png" width ="300px" alt="" />
+          <Col  md={7} className="pl-5 d-flex justify-content-between">
+          <div id='animation1' className=" ">
+                    <img id ="tr" src="animation.png" width ="90px" alt="" />
                   </div>
-                </Col>
-                <Col md = {6}>
-                <div id='animation2' className="mt-5 ml-5 d-flex align-items-center justify-content-center ">
-                    <img src="animation2.png" alt="" width ="300px"/>
+                  <div id='animation2' className="">
+                    <img src="animation3.png" alt="" width ="90"/>
                   </div>
-                  <div id='animation3' className=" d-flex align-items-center justify-content-center ">
-                    <img src="animation.png" alt=""  width ="300px" />
+                  <div id='animation3' className="">
+                    <img src="animation2.png" alt=""  width ="90" />
                   </div>
-                </Col>
-              </Row>
-            </Container>
+            
 
           </Col>
         </Row>

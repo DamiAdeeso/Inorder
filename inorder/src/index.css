@@ -11,22 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ .navbar .navbar-custom {
+  background-color: #f8f0ff;
+  
+}
 .nav-link{
+  box-sizing: border-box;
   font-weight: 700;
+  font-size: 18px;
   margin-right: 50px;
   color: #4D135C;
 }
+.nav-link:hover{
+  color:#4D135C;
+}
+.navbar-toggler-icon {
+  /* Replace 'your_color_here' with your desired color value (e.g., red, #00ff00, rgba(255, 0, 0, 0.5)) */
+  /* color: #4D135C; */
+}
 
-#try-it{
+/* Optional: To change the background color of the toggle button, use the following */
+.navbar-toggler {
+  /* Replace 'your_color_here' with your desired background color value */
+  /* background-color: #4D135C; */
+  color: #4D135C;
+
+  /* Optionally add padding or other styling here */
+}
+#signin-button{
   background-color: #c214fe;
   border:none;
-  padding:0 1.5rem;
+  width: 7rem;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
+  color: white;
 }
 #home-page{
   margin: 0;
   position: relative;
+  padding-bottom: 10rem;
+  min-height:79vh;
+  padding-bottom: 5rem;
   background-image: url(../public/background.jpg);
   background-size: cover;
 
@@ -52,6 +78,9 @@ a{
   font-size: 18px;
   font-weight:600;
 }
+a:hover{
+  font-size: 20px;
+}
 svg{
   fill: #c214fe;
   margin:0 6px;
@@ -67,6 +96,9 @@ svg{
   display: block;
   width:220px;
 }
+#get-started:hover{
+  width:240px
+}
 #home-page span{
   color: #c214fe;
 }
@@ -75,41 +107,38 @@ svg{
   color:#3c4043ff
 }
 #animation1{
-  margin-top: 15rem;
-  border-radius: 20px;
+
   transform: rotate(-10deg);
 } 
-tr{
-  max-width:120 ;
-  height:auto;
-}
+
 
 #animation2{
-  margin-left: 50%;
-  text-align: center;
-  border-radius: 20px;
-  transform: rotate(10deg);
+
+  /* transform: rotate(10deg); */
 }
-#animation2 img{
-  width:110
-}
+
 #animation3{
-  margin-top:5rem;
-  margin-left: 10rem;
-  text-align: center;
-  border-radius: 20px;
   transform: rotate(10deg);
 } 
-#animation3 img{
-  max-width:140 ;
-  height:auto;
-}
+
 @media(min-width :780px){
  
 }
 #footer{
-  padding: 1rem 0;
+  position:absolute;
+  right:0;
+  left:0;
+  bottom:1;
+  background-color: #f8f0ff;
+  padding-top: 1rem ;
+
+}
+#footer >p{
+  font-weight: bold;
 }
 #footer svg{
-  width: 50px;
+  width: 20px;
+}
+#footer svg:hover{
+  width:30px;
 }

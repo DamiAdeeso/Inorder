@@ -7,13 +7,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 function navbar() {
   return (
     <>
       {['lg'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary  mx-4 my-3">
-          <Container fluid>
-            <Navbar.Brand href="#"><Image src="logo.png"  width={"220px"} height={"75px"}/></Navbar.Brand>
+          <Container fluid className = "d-flex navbar-custom">
+            <Navbar.Brand href="#"><Image src="logo.png"  width={"160"} /></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -27,8 +28,9 @@ function navbar() {
                   <Nav.Link  href="#action1" className ="nav-link">Home</Nav.Link>
                   <Nav.Link href="#action2" className ="nav-link">Blog</Nav.Link>
                   <Nav.Link href="#action2" className ="nav-link">How it Works</Nav.Link>
+                  <Nav.Link href ="/signin" id = "signin-button"  className ="rounded text-center">Sign In</Nav.Link>
                 </Nav>
-                  <Button id = "try-it" >Try it Free <FontAwesomeIcon icon={faPlay} /></Button>
+                  
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
