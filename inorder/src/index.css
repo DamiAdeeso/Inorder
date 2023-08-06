@@ -36,20 +36,9 @@ code {
   background-color: #f8f0ff;
   font-size: 20px;
 }
-.offcanvas-size-xl {
-  --bs-offcanvas-width: min(95vw, 600px) !important;
-}
-.offcanvas-size-xxl {
-  --bs-offcanvas-width: min(95vw, 90vw) !important;
-}
-.offcanvas-size-md { /* add Responsivenes to default offcanvas */
-  --bs-offcanvas-width: min(95vw, 400px) !important;
-}
-.offcanvas-size-sm {
-  --bs-offcanvas-width: min(95vw, 250px) !important;
-}
+
 .offcanvas .form-control{
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 50px;
   width:100%;
   background-color:#ebd4f0;
