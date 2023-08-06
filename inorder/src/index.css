@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family:'Open Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:#4D135C;
 }
 
 code {
@@ -26,37 +28,64 @@ code {
 .nav-link:hover{
   color:#4D135C;
 }
-.navbar-toggler-icon {
-  /* Replace 'your_color_here' with your desired color value (e.g., red, #00ff00, rgba(255, 0, 0, 0.5)) */
-  /* color: #4D135C; */
-}
-
-/* Optional: To change the background color of the toggle button, use the following */
 .navbar-toggler {
-  /* Replace 'your_color_here' with your desired background color value */
-  /* background-color: #4D135C; */
   color: #4D135C;
 
-  /* Optionally add padding or other styling here */
 }
-#signin-button{
+.offcanvas{
+  background-color: #f8f0ff;
+  font-size: 20px;
+}
+.offcanvas-size-xl {
+  --bs-offcanvas-width: min(95vw, 600px) !important;
+}
+.offcanvas-size-xxl {
+  --bs-offcanvas-width: min(95vw, 90vw) !important;
+}
+.offcanvas-size-md { /* add Responsivenes to default offcanvas */
+  --bs-offcanvas-width: min(95vw, 400px) !important;
+}
+.offcanvas-size-sm {
+  --bs-offcanvas-width: min(95vw, 250px) !important;
+}
+.offcanvas .form-control{
+  font-size: 20px;
+  border-radius: 50px;
+  width:100%;
+  background-color:#ebd4f0;
+  width:100%;
+}
+.offcanvas .form-control:hover:active{
+  box-shadow: none;
+  box-sizing: border-box;
+  border:6px solid #4D135C
+}
+.offcanvas >.offcanvas-body button{
   background-color: #c214fe;
   border:none;
-  width: 7rem;
+  border-radius: 50px;
   font-weight: bold;
   font-size: 18px;
   color: white;
 }
-#home-page{
+.offcanvas >.offcanvas-body .sign-alternate {
+  padding:0;
+  color:#4D135C;
+  background-color: #f8f0ff;
+}
+#signin-submit{
+  width:100%
+}
+.intro-pages{
   margin: 0;
   position: relative;
   padding-bottom: 10rem;
-  min-height:79vh;
+  min-height:75vh;
+  width:100vw;
+  overflow: hidden;
   padding-bottom: 5rem;
   background-image: url(../public/background.jpg);
   background-size: cover;
-
-  /* opacity: 0.4; */
   background-repeat:   no-repeat;
   background-position: center center;
   text-align: left;
@@ -107,22 +136,50 @@ svg{
   color:#3c4043ff
 }
 #animation1{
-
+ width:90px ;
+ height:90px;
   transform: rotate(-10deg);
 } 
 
 
 #animation2{
+  width:90px ;
+  height:90px;
+   transform: rotate(10deg);
 
-  /* transform: rotate(10deg); */
 }
 
 #animation3{
-  transform: rotate(10deg);
+  width:90px ;
+  height:90px;
+   transform: rotate(1010deg);
 } 
 
-@media(min-width :780px){
- 
+@media(min-width :1024px){
+  #animation1{
+    margin-top: 35%;
+    width:30% ;
+    height:40%;
+    margin-right: 8rem;
+     transform: rotate(-10deg);
+   } 
+   
+   
+   #animation2{  
+    width:30% ;
+    height:40%;
+      transform: rotate(10deg);
+   
+   }
+   
+   #animation3{
+    width:40% ;
+    height:50%;
+    margin-left: 7rem;
+    margin-top: 44%;
+    margin-bottom: 0;
+      transform: rotate(1010deg);
+   } 
 }
 #footer{
   position:absolute;
@@ -141,4 +198,7 @@ svg{
 }
 #footer svg:hover{
   width:30px;
+}
+#form-div{
+  border :rpx solid c214fe
 }

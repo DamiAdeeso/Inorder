@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 import { Container, Row, Col, Button } from "react-bootstrap"
 const HomePage = () => {
   return (
-    <div id="home-page">
+    <div className="intro-pages">
       <Container>
         <Row>
-          <Col md={5} id='left-div'>
+          <Col lg={5} id='left-div'>
             <p id="header-text"><span>The best</span> way to get things in order.</p>
             <p>Regain Clarity and Calmness by getting all those tasks out of your head and onto your to-do list (no matter where you are on what device you use)
             </p>
@@ -22,16 +22,10 @@ const HomePage = () => {
               </h5>
             </div>
           </Col>
-          <Col  md={7} className="pl-5 d-flex justify-content-between">
-          <div id='animation1' className=" ">
-                    <img id ="tr" src="animation.png" width ="90px" alt="" />
-                  </div>
-                  <div id='animation2' className="">
-                    <img src="animation3.png" alt="" width ="90"/>
-                  </div>
-                  <div id='animation3' className="">
-                    <img src="animation2.png" alt=""  width ="90" />
-                  </div>
+          <Col  lg={7} className="pl-5 d-flex justify-content-between">
+                    <img id ="animation1" src="animation.png"  alt="" />
+                    <img id='animation2' src="animation3.png" alt=""/>
+                    <img id='animation3' src="animation2.png" alt="" />
             
 
           </Col>
