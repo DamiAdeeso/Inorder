@@ -8,8 +8,8 @@ import Signin from './pages/signin'
 function App() {
   return (
     <div className="App">
-      <Navbar/>
       <BrowserRouter>
+      <Navbar/>
       <Routes>
         <Route path ="/" element ={<HomePage/>}/>
         <Route path = "/signin" element ={<Signin/>}/>

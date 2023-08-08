@@ -7,11 +7,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Signinform from './Signinform';
 function PageNav() {
   // had issues with 2 oof canvas side bars code below fixes that
+  const navigate = useNavigate();
   const [show2, setShow2] = useState(false);
     const handleShow2 = () => setShow2(true);
     const handleClose2 = () => setShow2(false);

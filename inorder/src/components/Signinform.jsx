@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Button, Form, Image, Offcanvas } from 'react-bootstrap';
-import { } from 'react-router-dom';
-import Axios from 'axios'
+import { useNavigate } from 'react-router-dom';
+import Axios from 'axios';
+import { Store } from '../Store';
 
 function Signinform() {
+    
     const [ifSignin, setSignin] = useState(true);
     const [show, setShow] = useState(false);
+    const navigate = useNavigate();
+    const {state,dispatch:ctxDispatch}= useContext(Store);
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -33,12 +37,36 @@ function Signinform() {
     }
     const signUp = async (e) => {
         e.preventDefault();
+        try{
+            if(setIsPasswordSame){
+                const {data} = await Axios.post("/api/users/signup",{
+                        firstName,
+                        lastName,
+                        email,
+                        password,
+                    }); console.log(data)
+                    ctxDispatch({type:'USER_SIGNIN',payload:data});
 
-        // const {user} = await Axios.post("/api/users/signin",{
-        //     email,
-        //     password,
-        // });
-    }
+                    if(data)navigate("/dashboard")
+            }
+     
+        }catch(err){
+            console.log(err);
+        }
+       
+        }
+
+        const signIn = async (e) => {
+            e.preventDefault();
+                const {data} = await Axios.post("/api/users/signin",{
+                        email,
+                        password,
+                    });
+
+                ctxDispatch({type:"USER_SIGNIN",payload:data})
+            }
+    
+            
     return (
         <>
             {
@@ -50,7 +78,7 @@ function Signinform() {
                             <Offcanvas.Title></Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body className='d-flex flex-column align-items-center justify-content-center'> <Image className="text-center mb-5" src="logo2.png" width={"120"} />
-                            <Form className='text-center'>
+                            <Form className='text-center'onSubmit={signIn}>
                                 <h3 className="text-center">Welcome back</h3>
                                 <Form.Group className="mb-4" controlId="formBasicEmail">
                                     <Form.Control type="email" className="p-2 pl-5 text-bold" placeholder="Enter email" onChange={(e) => { setEmail(e.target.value) }} />
@@ -115,6 +143,6 @@ function Signinform() {
 
         </>
     )
-}
 
+        }
 export default Signinform
