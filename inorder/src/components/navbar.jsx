@@ -21,7 +21,7 @@ function PageNav() {
       {['lg'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary  mx-4 my-3">
           <Container fluid className="d-flex navbar-custom">
-            <Navbar.Brand href="#"><Image src="logo.png" width={"160"} /></Navbar.Brand>
+            <Navbar.Brand href="/"><Image src="logo.png" width={"160"} /></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={handleShow2}/>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

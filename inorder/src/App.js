@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage"
 import Navbar  from './components/navbar'
 import Footer from './components/footer';
 import Signin from './pages/signin'
+import Dashboard from './pages/dashboard';
 function App() {
   return (
     <div className="App">
@@ -12,7 +13,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path ="/" element ={<HomePage/>}/>
-        <Route path = "/signin" element ={<Signin/>}/>
+        <Route path = "/dashboard" element = {<Dashboard/>}/>
       </Routes>
       </BrowserRouter>
       <Footer/>

@@ -191,3 +191,9 @@ svg{
 #form-div{
   border :rpx solid c214fe
 }
+
+#side-bar{
+  width: 60px;
+  height:100vh;
+  background-color: #f8f9fa;
+}
