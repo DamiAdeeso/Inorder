@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color:#4D135C;
+  color:#ffffff
 }
 
 code {
@@ -196,4 +196,17 @@ svg{
   width: 60px;
   height:100vh;
   background-color: #f8f9fa;
+}
+#to-do{
+  color:black;
+  background-color: #daaee1;
+  text-align: left;
+  color: #4d135c;
+  border-radius: 10px;
+}
+#to-do .plus-minus{
+  padding:.1em .4em;
+  border-radius: 5px;
+  margin-left: auto;
+  background-color:#c214fe
 }
