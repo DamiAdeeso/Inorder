@@ -203,10 +203,14 @@ svg{
   text-align: left;
   color: #4d135c;
   border-radius: 10px;
+  margin-right: 10px;
 }
 #to-do .plus-minus{
   padding:.1em .4em;
   border-radius: 5px;
   margin-left: auto;
   background-color:#c214fe
+}
+.time-frames{
+  background-color:#f8f0ff;
 }
