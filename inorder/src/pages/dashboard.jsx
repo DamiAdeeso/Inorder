@@ -9,10 +9,7 @@ function Dashboard() {
     }
     
  }
- todayList:{
-    pickup,
-    dropoff,
-}
+
   return (
     <div className='d-flex'>
         <div id ="side-bar" ></div>
