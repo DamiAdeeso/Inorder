@@ -16,7 +16,7 @@ function Dashboard() {
         <Container fluid>
             <Row>
                 <Col lg={3}id ="to-do" className='p-3 mr-4'> 
-                <h4 className='mt-1 text-left'> Todo List</h4>
+                <h4 className='mt-1 text-left '> To-do List</h4>
                <div className='mt-2'>
                 <div className='d-flex time-frames rounded pt-3 pb-1 px-2'>
                 <h5 className = "mr-5">Today</h5>
