@@ -2,12 +2,12 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
 function Dashboard() {
- let data = {
-    todayList:{
-        pickup,
-        dropoff,
-    }
-    
+
+    todayList= {
+        task1:"pickup",
+        task2:"dropoff",
+
+       
  }
 
   return (
@@ -22,7 +22,14 @@ function Dashboard() {
                 <h5 className = "mr-5">Today</h5>
                 <p className='plus-minus' >+</p>
                 </div>
-                   
+                {
+                    (todayList.map((item)=>(
+                        <div>item.task1</div>
+                    )))
+                }
+                   <div>
+
+                   </div>
                 </div>     
                
                 <div></div>
